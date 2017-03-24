@@ -1,2 +1,8 @@
 language: csharp
+dist: trusty
+sudo: required
+mono: none
+dotnet: 1.1.0
 solution: MyPortfolio.sln
+script:
+  - ./build.sh --quiet verify
