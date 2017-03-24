@@ -1,0 +1,48 @@
+@model IEnumerable<MyPortfolio.Models.Blog.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-currentTag="@ViewData["currentTag"]">DSP2017</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-currentTag="@ViewData["currentTag"]">QA</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-currentTag="@ViewData["currentTag"]">CSHARP</a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    </table>
+    <section id="blog">
+        @foreach (var item in Model)
+        {
+
+            <div class="container">
+                <div class="blog-heading">
+                    <h1 class="title wow fadeInDown" data-wow-delay=".3s">@Html.DisplayFor(modelItem => item.Title)</h1>
+                    <p class="wow fadeInDown" data-wow-delay=".5s">
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="media-body">
+                                <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </section> <!-- /#feature -->

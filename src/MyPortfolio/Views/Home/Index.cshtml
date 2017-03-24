@@ -1,0 +1,340 @@
+@model MyPortfolio.Models.EmailModel
+@ViewData["Title"]
+@using (Html.BeginForm())
+{
+
+
+<!--
+        ==================================================
+        Slider Section Start
+        ================================================== -->
+        <section id="hero-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="block wow fadeInUp" data-wow-delay=".3s">
+                            <!-- Slider -->
+                            <section class="cd-intro">
+                                <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
+                                    <span>@ViewData["sliderHi"]</span><br>
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">@ViewData["engineer"]</b>
+                                        <b>@ViewData["developer"]</b>
+                                        <b>@ViewData["sofwareQa"]</b>
+                                        <b>@ViewData["father"]</b>
+                                    </span>
+                                </h1>
+                            </section> <!-- cd-intro -->
+                            <!-- /.slider -->
+                            <h2 class="wow fadeInUp animated" data-wow-delay=".6s">
+                                @ViewData["sliderDescription"]
+                                <br />
+                                <br />
+                                @ViewData["sliderTags"]
+                            </h2>
+                            <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works">@ViewData["viewWorkButton"]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/#main-slider-->
+        <!--
+        ==================================================
+        Slider Section Start
+        ================================================== -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                            <h2>
+                                @ViewData["aboutMe"]                                
+                            </h2>
+                            <p>
+                                @ViewData["aboutMeDesc1"]
+                            </p>
+                            <p>
+                                @ViewData["aboutMeDesc2"]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                            <img src="~/images/me.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /#about -->
+        <!--
+        ==================================================
+        Portfolio Section Start
+        ================================================== -->
+        <section id="works" class="works">
+            <div class="container">
+                <div class="section-heading">
+                    <h1 class="title wow fadeInDown" data-wow-delay=".3s">@ViewData["latestWoks"]</h1>
+                    @*<p class="wow fadeInDown" data-wow-delay=".5s">
+                        Showcase of my last projects
+                    </p>*@
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                            <div class="img-wrapper">
+                                <img src="~/images/portfolio/Ei-sc-github.jpg" class="img-responsive" alt="this is a title">
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        @*<a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a>*@
+                                        @*<a target="_blank" href="https://github.com/12masta">Details</a>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://github.com/12masta">
+                                        @ViewData["gitHub"]
+                                    </a>
+                                </h4>
+                                <p>
+                                    @ViewData["gitHubDesc"]
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="img-wrapper">
+                                <img src="~/images/portfolio/rowingSectionWebSite.png" class="img-responsive" alt="this is a title">
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        @*<a rel="gallery" class="fancybox" href="#">Demo</a>
+                                        <a target="_blank" href="single-portfolio.html">Details</a>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://github.com/12masta/RowingSectionSite/tree/master/Identity1">
+                                        @ViewData["thesisEngineering"]
+                                    </a>
+                                </h4>
+                                <p>
+                                    @ViewData["thesisEngineeringDesc"]
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="img-wrapper">
+                                <img src="~/images/portfolio/desktopApp.png" class="img-responsive" alt="">
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        @*<a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a>
+                                        <a target="_blank" href="single-portfolio.html">Details</a>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="#">
+                                        @ViewData["qATools"]
+                                    </a>
+                                </h4>
+                                <p>
+                                    @ViewData["qAToolsDesc"]
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- #works -->
+        <!--
+        ==================================================
+        Portfolio Section Start
+        ================================================== -->
+        <section id="feature">
+            <div class="container">
+                <div class="section-heading">
+                    <h1 class="title wow fadeInDown" data-wow-delay=".3s">@ViewData["offerFromMe"]</h1>
+                    <p class="wow fadeInDown" data-wow-delay=".5s">
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="media-left">
+                                <div class="icon">
+                                    <i class="ion-ios-flask-outline"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">@ViewData["webDeveloping"]</h4>
+                                <p>@ViewData["webDevelopingDesc"]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <div class="media-left">
+                                <div class="icon">
+                                    <i class="ion-bug"></i>                                   
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">@ViewData["qa"]</h4>
+                                <p>@ViewData["qaDesc"]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <div class="media-left">
+                                <div class="icon">
+                                    <i class="ion-gear-a"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">@ViewData["testDrivenDevelopment"]</h4>
+                                <p>@ViewData["testDrivenDevelopmentDesc"]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                            <div class="media-left">
+                                <div class="icon">
+                                    <i class="ion-iphone"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">@ViewData["mobility"]</h4>
+                                <p>@ViewData["mobilityDesc"]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+                            <div class="media-left">
+                                <div class="icon">
+                                    <i class="ion-clock"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">@ViewData["deliverOnTime"]</h4>
+                                <p>@ViewData["deliverOnTimeDesc"]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+                            <div class="media-left">
+                                <div class="icon">
+                                    <i class="ion-email"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">@ViewData["keepYouUpdated"]</h4>
+                                <p>@ViewData["keepYouUpdatedDesc"]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /#feature -->
+        <!--
+        ==================================================
+        Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+                                @ViewData["soWhatYouThink"]
+                            </h2>
+                            <a id="contactButton" class="btn btn-default btn-contact wow fadeInDown smooth-scroll" data-wow-delay=".7s" data-wow-duration="500ms" href="#contact-form" data-section="#contact-form">@ViewData["contactWithMe"]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-section" class="hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block">
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">@ViewData["contactWithMe2"]</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                                @ViewData["contactWithMe2Desc"]
+                            </p>
+                            <div class="contact-form">
+                                <form id="contact-form" role="form">
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        @Html.TextBoxFor(m => m.FromName, new { @class = "form-control", @placeholder = @ViewData["yourName"], @id = "name", @type = "text" })
+                                        @Html.ValidationMessageFor(m => m.FromName, "")
+                                    </div>
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                        @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control", @placeholder = @ViewData["yourEmail"], @id = "email", @type = "email" })
+                                        @Html.ValidationMessageFor(m => m.FromEmail, "")
+                                    </div>
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", @placeholder = @ViewData["subject"], @id = "subject", @type = "text" })
+                                        @Html.ValidationMessageFor(m => m.Subject, "")
+                                    </div>
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                                        @Html.TextAreaFor(m => m.Message, new { @class = "form-control", @placeholder = @ViewData["message"], @id = "message", @type = "text", @rows = "6" })
+                                        @Html.ValidationMessageFor(m => m.Message, "")
+                                    </div>
+                                    <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                        @Html.AntiForgeryToken()
+                                        <input type="button" id="contact-submit" class="btn btn-default btn-send" value="@ViewData["sendMessageButton"]">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-area">
+                            <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">@ViewData["findMe"]</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                                @ViewData["findMeDesc"]
+                            </p>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed/v1/place?q=Cracow&key=AIzaSyDMH5DBx_ZkKGALmun8T5tXqih769veni8" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row address-details">
+                    <div class="col-md-3">
+                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
+                            <i class="ion-ios-location-outline"></i>
+                            <p>@ViewData["place1"]</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <i class="ion-ios-location-outline"></i>
+                            <p>@ViewData["place2"]</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+                            <i class="ion-ios-email-outline"></i>
+                            <p>@ViewData["mail"]</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                            <i class="ion-ios-telephone-outline"></i>
+                            <p>@ViewData["phone"]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        }

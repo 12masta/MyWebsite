@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Portfolio</title>
+
+    <!-- Mobile Data -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <environment names="Development">
+        <link href="~/css/jquery.fancybox.css" rel="stylesheet" />
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <!-- Ionicons Fonts Css -->
+        <link href="~/css/ionicons.min.css" rel="stylesheet" />
+        <!-- animate css -->
+        <link href="~/css/animate.css" rel="stylesheet" />
+        <!-- Hero area slider css-->
+        <link href="~/css/slider.css" rel="stylesheet" />
+        <!-- owl craousel css -->
+        <link href="~/css/owl.carousel.css" rel="stylesheet" />
+        <link href="~/css/owl.theme.css" rel="stylesheet" />
+        <!-- template main css file -->
+        <link href="~/css/main.css" rel="stylesheet" />
+        <!-- responsive css -->
+        <link href="~/css/responsive.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.min.css" />
+        <link href="~/css/video.css" rel="stylesheet" />
+
+    </environment>
+    <environment names="Staging,Production">
+         <link href="~/css/jquery.fancybox.css" rel="stylesheet" />
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <!-- Ionicons Fonts Css -->
+        <link href="~/css/ionicons.min.css" rel="stylesheet" />
+        <!-- animate css -->
+        <link href="~/css/animate.css" rel="stylesheet" />
+        <!-- Hero area slider css-->
+        <link href="~/css/slider.css" rel="stylesheet" />
+        <!-- owl craousel css -->
+        <link href="~/css/owl.carousel.css" rel="stylesheet" />
+        <link href="~/css/owl.theme.css" rel="stylesheet" />
+        <!-- template main css file -->
+        <link href="~/css/main.css" rel="stylesheet" />
+        <!-- responsive css -->
+        <link href="~/css/responsive.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.min.css" />
+        <link href="~/css/video.css" rel="stylesheet" />
+    </environment>
+    @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
+</head>
+<body>
+    <header id="top-bar" class="navbar-fixed-top animated-header">
+        <div class="container">
+            <!-- main menu -->
+            <nav class="nav navbar-nav navbar-right" role="navigation">
+                <div class="main-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="homeNavbar"><a class="animated-header wow smooth-scroll" data-wow-delay=".9s" href="#hero-area" data-section="#hero-area">@ViewData["home"]</a></li>
+                        <li id="aboutNavbar"><a class="animated-header wow smooth-scroll" data-wow-delay=".9s" href="#about" data-section="#about">@ViewData["about"]</a></li>                      
+                        <li id="contactNavbar"><a class="animated-header wow smooth-scroll" data-wow-delay=".9s" href="#call-to-action" data-section="#call-to-action">@ViewData["contact"]</a></li>
+                        <li id="blogNavbar"><a asp-controller="Blogs" asp-action="Index" data-wow-delay=".9s">Blog</a></li>
+                        @*<li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-expanded="false" id="dropdownStandard">Język<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li id="PL"><a href="#">PL</a></li>
+                                <li id="ENG"><a href="#">ENG</a></li>
+                            </ul>
+                        </li>*@                      
+                    </ul>
+                </div>
+            </nav>
+            <!-- /main nav -->
+        </div>
+    </header>
+    <div class="container-fluid">
+        @RenderBody()
+        <hr />
+        <footer id="footer">
+            <div class="container">
+                <div class="col-md-4">
+                    <p>&copy; @ViewData["Title"] - Portfolio</p>
+                </div>
+                <div class="col-md-4">
+                    @await Html.PartialAsync("_SelectLanguagePartial")
+                </div>
+                <div class="col-md-4">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/marcin.stanek.90" class="Facebook">
+                                <i class="ion-social-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/marcin-stanek-524485114?trk=nav_responsive_tab_profile_pic" class="Linkedin">
+                                <i class="ion-social-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>        
+        </footer>
+    </div>
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquerry-fancybox/dist/jquery.fancybox.js"></script>
+        <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/slider.js"></script>
+        <script src="~/js/wow.min.js"></script>
+        <script src="~/js/main.js"></script>
+        <script src="~/js/hidden.js"></script>
+        <script src="~/js/bootstrap-notify.js"></script>
+        <script src="~/js/video.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquerry-fancybox/dist/jquery.fancybox.js"></script>
+        <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/slider.js"></script>
+        <script src="~/js/wow.min.js"></script>
+        <script src="~/js/main.js"></script>
+        <script src="~/js/hidden.js"></script>
+        <script src="~/js/bootstrap-notify.js"></script>
+        <script src="~/js/video.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

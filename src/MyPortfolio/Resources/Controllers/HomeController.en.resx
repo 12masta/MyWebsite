@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="aboutMe" xml:space="preserve">
+    <value>ABOUT ME</value>
+  </data>
+  <data name="aboutMeDesc1" xml:space="preserve">
+    <value>Hello, I am Marcin Stanek and I am test automation engineer. I am passionate about designing Automation Frameworks that are effective and easy to maintain. My weapons against websites are Selenium WebDriver, C# and Java.</value>
+  </data>
+  <data name="aboutMeDesc2" xml:space="preserve">
+    <value>Excepts software testing I am also developer, I am able to create for you web or desktop application. I live in Cracow with my wife and lovely daughter. I am interested in taking a job where I can use my skills and at the same time enable me to further develop the intellectual and personal knowledge.</value>
+  </data>
+  <data name="contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="contactWithMe" xml:space="preserve">
+    <value>CONTACT WITH ME</value>
+  </data>
+  <data name="contactWithMe2" xml:space="preserve">
+    <value>CONTACT WITH ME</value>
+  </data>
+  <data name="contactWithMe2Desc" xml:space="preserve">
+    <value>Send me a message. I will reply in the near future.</value>
+  </data>
+  <data name="deliverOnTime" xml:space="preserve">
+    <value>Deliver on time</value>
+  </data>
+  <data name="deliverOnTimeDesc" xml:space="preserve">
+    <value>I work hard to make sure all services are delivered on time but without compromising quality.</value>
+  </data>
+  <data name="developer" xml:space="preserve">
+    <value>DEVELOPER</value>
+  </data>
+  <data name="engineer" xml:space="preserve">
+    <value>ENGINEER</value>
+  </data>
+  <data name="father" xml:space="preserve">
+    <value>FATHER</value>
+  </data>
+  <data name="findMe" xml:space="preserve">
+    <value>FIND ME</value>
+  </data>
+  <data name="findMeDesc" xml:space="preserve">
+    <value>Want to meet? Talk about projects? You cand find me here, but please, write message first</value>
+  </data>
+  <data name="footerButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="footerLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="gitHub" xml:space="preserve">
+    <value>Git Hub</value>
+  </data>
+  <data name="gitHubDesc" xml:space="preserve">
+    <value>My code repository</value>
+  </data>
+  <data name="home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="keepYouUpdated" xml:space="preserve">
+    <value>Keep You Updated</value>
+  </data>
+  <data name="keepYouUpdatedDesc" xml:space="preserve">
+    <value>I keep clients informed every step of the way. No surprises. Simply peace of mind.</value>
+  </data>
+  <data name="latestWoks" xml:space="preserve">
+    <value>LATEST WORKS</value>
+  </data>
+  <data name="mail" xml:space="preserve">
+    <value>contact@marcinstanek.pl</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="mobility" xml:space="preserve">
+    <value>Mobility</value>
+  </data>
+  <data name="mobilityDesc" xml:space="preserve">
+    <value>You will have absolutely no problem to showcase your company website to your cleints and friends, whatever you actually are.</value>
+  </data>
+  <data name="offerFromMe" xml:space="preserve">
+    <value>OFFER FROM ME</value>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>607 758 605</value>
+  </data>
+  <data name="place1" xml:space="preserve">
+    <value>Cracow, Poland</value>
+  </data>
+  <data name="place2" xml:space="preserve">
+    <value>Wolica, Poland</value>
+  </data>
+  <data name="qa" xml:space="preserve">
+    <value>QA</value>
+  </data>
+  <data name="qaDesc" xml:space="preserve">
+    <value>Looking for QA? Need to automate testing process in your company? You got problem with qualtiy of software in your organization? You've come to the right place to solve these problems!</value>
+  </data>
+  <data name="qATools" xml:space="preserve">
+    <value>QA tools</value>
+  </data>
+  <data name="qAToolsDesc" xml:space="preserve">
+    <value>Desktop application which help me with daily work</value>
+  </data>
+  <data name="sendMessageButton" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="sliderDescription" xml:space="preserve">
+    <value>WITH 2 YEARS WORK EXPERIENCE. PROFESSIONALLY SOFTWARE QA ENGINEER,
+PRIVATE DEVELOPER AND IT PASSIONATE. THIS SITE SHOWCASES SOME OF MY WORK.</value>
+  </data>
+  <data name="sliderHi" xml:space="preserve">
+    <value>HI, MY NAME IS MARCIN. I AM A</value>
+  </data>
+  <data name="sliderTags" xml:space="preserve">
+    <value>#WEBDEV #QA #CSHARP #DOTNET #JAVA #SELENIUM</value>
+  </data>
+  <data name="sofwareQa" xml:space="preserve">
+    <value>SOFTWARE QA</value>
+  </data>
+  <data name="soWhatYouThink" xml:space="preserve">
+    <value>SO WHAT YOU THINK ?</value>
+  </data>
+  <data name="subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="testDrivenDevelopment" xml:space="preserve">
+    <value>Test Driven Development</value>
+  </data>
+  <data name="testDrivenDevelopmentDesc" xml:space="preserve">
+    <value>Using testing tools and processes, automate, load, database and mobile device testing, ensuring the final product is defects free and meets quality standards.</value>
+  </data>
+  <data name="thesisEngineering" xml:space="preserve">
+    <value>Thesis Engineering</value>
+  </data>
+  <data name="thesisEngineeringDesc" xml:space="preserve">
+    <value>System for supporting rowing section</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>marcinstanek.pl</value>
+  </data>
+  <data name="viewWorkButton" xml:space="preserve">
+    <value>VIEW WORKS</value>
+  </data>
+  <data name="webDeveloping" xml:space="preserve">
+    <value>Web Developing</value>
+  </data>
+  <data name="webDevelopingDesc" xml:space="preserve">
+    <value>Your business is unique. Your website should be too. Approaches each client individually, custom-tailoring web services to address your unique demands.</value>
+  </data>
+  <data name="yourEmail" xml:space="preserve">
+    <value>Your Email</value>
+  </data>
+  <data name="yourName" xml:space="preserve">
+    <value>Your Name</value>
+  </data>
+</root>
