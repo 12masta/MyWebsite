@@ -1,4 +1,4 @@
 language: csharp
 solution: MyPortfolio.sln
 script:
-  - ./build.sh --quiet verify
+  - ./build.sh
