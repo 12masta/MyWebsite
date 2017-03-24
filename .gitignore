@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+src/MyPortfolio/appsetting.json
+src/MyPortfolio/bin
+src/MyPortfolio/Migrations
+src/MyPortfolio/obj
+src/MyPortfolio/Properties/PublishProfiles
+MyWebsite
+.vs
